@@ -1,11 +1,18 @@
-Console.WriteLine("Hallo! Wie heisst du?: ");
-string name = Console.ReadLine();
-string begruessung = "Freut mich, " + name + "! Schön, dich zu sehen.";
-Console.WriteLine(begruessung);
-Console.WriteLine("Wie alt bist du?: ");
-string alter = Console.ReadLine();
-string alterBegruessung = "Wow, " + alter + " Jahre alt! Das ist toll!";
-Console.WriteLine(alterBegruessung);
-Console.WriteLine("Drücke eine beliebige Taste, um das Programm zu beenden.");
-Console.ReadKey();
-Console.WriteLine("Auf Wiedersehen!");
+Console.Write("Zahl 1:");
+int zahl1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Zahl 2:");
+int zahl2 = Convert.ToInt32(Console.ReadLine());
+if (zahl2 < zahl1 && zahl1 > 5)
+{
+    int temp = zahl1;
+    zahl1 = zahl2;
+    zahl2 = temp;
+}
+else
+{
+    if (zahl1 == zahl2)
+        zahl1 = 5;
+    zahl2 = 8;
+}
+Console.WriteLine("Ausgabe 1 = " + Convert.ToString(zahl1));
+Console.WriteLine("Ausgabe 2 = " + Convert.ToString(zahl2));

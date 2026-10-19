@@ -1,18 +1,26 @@
-Console.Write("Zahl 1:");
-int zahl1 = Convert.ToInt32(Console.ReadLine());
-Console.Write("Zahl 2:");
-int zahl2 = Convert.ToInt32(Console.ReadLine());
-if (zahl2 < zahl1 && zahl1 > 5)
+Console.WriteLine("What is your sex? (m/f): ");
+bool isMale = Console.ReadLine() == "m";
+Console.WriteLine("What is your weight? ");
+int weight = Convert.ToInt32(Console.ReadLine());
+if (isMale)
 {
-    int temp = zahl1;
-    zahl1 = zahl2;
-    zahl2 = temp;
+    if (weight < 55)
+        Console.WriteLine("Fliegengewichtig");
+    else if (weight < 66)
+        Console.WriteLine("Leichtgewichtig");
+    else if (weight < 84)
+        Console.WriteLine("Mittelgewichtig");
+    else if (weight < 85)
+        Console.WriteLine("Schwergewichtig");
 }
 else
 {
-    if (zahl1 == zahl2)
-        zahl1 = 5;
-    zahl2 = 8;
+    if (weight < 48)
+        Console.WriteLine("Fliegengewichtig");
+    else if (weight < 55)
+        Console.WriteLine("Leichtgewichtig");
+    else if (weight < 63)
+        Console.WriteLine("Mittelgewichtig");
+    else if (weight < 64)
+        Console.WriteLine("Schwergewichtig");
 }
-Console.WriteLine("Ausgabe 1 = " + Convert.ToString(zahl1));
-Console.WriteLine("Ausgabe 2 = " + Convert.ToString(zahl2));

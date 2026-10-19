@@ -24,3 +24,5 @@ else
     else if (weight < 64)
         Console.WriteLine("Schwergewichtig");
 }
+Console.WriteLine("Press any key to exit.");
+Console.ReadKey();

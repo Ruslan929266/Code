@@ -1,0 +1,11 @@
+Console.WriteLine("Hallo! Wie heisst du?: ");
+string name = Console.ReadLine();
+string begruessung = "Freut mich, " + name + "! Schön, dich zu sehen.";
+Console.WriteLine(begruessung);
+Console.WriteLine("Wie alt bist du?: ");
+string alter = Console.ReadLine();
+string alterBegruessung = "Wow, " + alter + " Jahre alt! Das ist toll!";
+Console.WriteLine(alterBegruessung);
+Console.WriteLine("Drücke eine beliebige Taste, um das Programm zu beenden.");
+Console.ReadKey();
+Console.WriteLine("Auf Wiedersehen!");
